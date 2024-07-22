@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CalculateApp</string>
+    <string name="example">10 + 5 = ?</string>
+    <string name="button_answer">Проверить себя</string>
+    <string name="sorry_the_answer_is_incorrect">Ваш ответ неверный. Попробуйте переделать</string>
+    <string name="input_answer">Напишите свой ответ</string>
+    <string name="correct_answer">Ваш ответ верный</string>
 </resources>

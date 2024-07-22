@@ -8,12 +8,70 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textViewExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/example"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/input_answer"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExample" />
+
+    <Button
+        android:id="@+id/buttonAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/button_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnswer" />
+
+    <TextView
+        android:id="@+id/textIncorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#FF0000"
+        android:padding="24dp"
+        android:text="@string/sorry_the_answer_is_incorrect"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer" />
+
+    <TextView
+        android:id="@+id/textCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#06ED24"
+        android:padding="24dp"
+        android:text="@string/correct_answer"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
