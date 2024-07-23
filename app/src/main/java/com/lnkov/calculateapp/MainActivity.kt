@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val secondNumber: Int = Random.nextInt(fromNumber, untilNumber)
         val result = firstNumber + secondNumber
 
-        textViewExample.setText("$firstNumber + $secondNumber = ?")
+        textViewExample.text = "$firstNumber + $secondNumber = ?"
 
         // Слушатель клика
         buttonAnswer.setOnClickListener {
